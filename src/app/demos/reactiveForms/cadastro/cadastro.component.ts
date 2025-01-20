@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Usuario } from './models/usuario';
-import { NgBrazilValidators } from 'ng-brazil';
+
 
 @Component({
   selector: 'app-cadastro',
@@ -27,7 +27,7 @@ export class CadastroComponent implements OnInit {
 
     this.cadastroForm = this.formBuilder.group({
         nome: ['', Validators.required],
-        cpf: ['', [Validators.required, NgBrazilValidators.cpf]],
+        cpf: ['', [Validators.required]],
         email: ['', [Validators.required, Validators.email]],
         senha: [''],
         senhaConfirmacao: ['']

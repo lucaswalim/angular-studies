@@ -4,8 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgBrazil, TextMask } from 'ng-brazil'
-import { TextMaskModule } from 'ng-brazil/angular2TextMask';
+
 
 @NgModule({
   declarations: [
@@ -16,8 +15,8 @@ import { TextMaskModule } from 'ng-brazil/angular2TextMask';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    TextMaskModule,
-    NgBrazil,
+    // TextMaskModule,
+    // NgBrazil,
   ],
   providers: [],
   bootstrap: [AppComponent]
